@@ -66,5 +66,54 @@ if len(guess) == 1 and guess.isalpha():
         else: 
             print("Invalid letter, Enter a single character alphabet")
 ```
-- Once the if block is True, towards the end of the function check_guess() class is called by passing the same input, which will evaluate if the input is in the randomly picked word.
+- Once the if block is True, towards the end of the function check_guess() function is called by passing the guess, which will evaluate if the input is in the  word.
+
+## Milestone 4
+> Created milestone_4.py which contains the game class which now contains the functions from milestone 2 and milestone 4 
+### Task 1
+- Hangman class and its constructor and attributes are defined
+### Task 2
+- Copied the entire code from milestone 2 and milestone 3 which will become methods of this class
+# Task 3 
+- Check guess method is updated to replace the underscores '_' in word_guessed list with the letter guessed by the user
+- A for-loop that will loop through each letter in the word
+- An if block is created to check if the letter = guess
+- If this is true, A for loop iterates through each idx and letter using an enumerate keyword as shows in below code:
+```python
+for i, letter in enumerate(self.word)
+if letter == guess:
+self.word_guessed[i] = letter
+self.num_letters -= 1 
+```
+- If the letter is equal to the guess then the word_guessed list at that index is updated by guess and num_letters is reduced by 1
+- If the letter is not equal to guess, num_lives are reduced by 1 and the following message is printed 
+> Sorry! {guess} is not in the word
+> You have {num_lives} lives left! 
+
+## Milestone 5
+> Putting it all together
+ - Coding the logic of the game by
+- Created milestone_5.py file which will contains all the code from milestone_4 and the code that is required to play this game
+- A function is defined called play_game which takes in word_list as an argument
+- An instance of Hangman class is created which is called game
+- A while loop is set to True that iterates through the following code
+```python
+ 
+        if game.num_lives == 0:
+            print("You lost!")
+            break
+
+        elif game.num_letters > 0:
+            game.ask_for_input()  
+
+        elif game.num_lives != 0 and game.num_letters == 0:
+            print("Congratulation you won the game!")
+            break
+ ```
+- If block checks if the number of lives is zero, if it is, The game is over and "You lost!" is printed
+- Else-if block checks if the number of unique letters to be guessed is greater than 0, if this is true
+ > ask_for_input() method is called
+- The above method is called until all the unique letters are guessed.
+- After this the next elif block is run which will print "Congratulations! You won the game." and it breaks the loop.
+
 
