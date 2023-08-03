@@ -23,7 +23,7 @@ word_list = ['pears','apple','banana','orange','kiwi']
 ```
 ### Task 2
 - Using the random module of python, created a random output from the list upon each time it is passed in the PRINT() function and saving to a variable called 'word'.
-![](C:\Users\mohdi\hangman\hangman\milestone_2_snippet.png)
+![Image](hangman\milestone_2_snippet.png)
 ### Task 3 
 - INPUT() function is used to ask the user for an input of string which contains only single letter of alphabet
 ```python 
