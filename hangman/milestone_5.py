@@ -1,4 +1,6 @@
 import random
+
+
 class Hangman:
     '''
     This is a class that contains a method to ask for user input and check the guess
