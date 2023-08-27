@@ -1,21 +1,18 @@
 # Project  Hangman
 
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
-
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 
 ## Milestone 1
 
 >  Setting up the environment
-
- - This git repository contains all the code required to play the hangman game
- - To clone this repository, copy and paste the following code in your terminal ```python 
-
+- This git repository contains all the code required to play the hangman game
+- To clone this repository, copy and paste the following code in your terminal ```python 
 
 ## Milestone 2
  
-> Created variables for the game
+> Initialized variables for the game
 
 ### Task 1
 - Created a milestone_2.py file in the hangman folder which contains the code for the first milestone, then defined a list of 5 fruits and assigned it to a variable called word list.
