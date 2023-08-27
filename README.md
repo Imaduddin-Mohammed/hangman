@@ -8,7 +8,8 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 >  Setting up the environment
 - This git repository contains all the code required to play the hangman game
-- To clone this repository, copy and paste the following code in your terminal ```python https://github.com/Imaduddin-Mohammed/hangman.git```
+- To clone this repository, copy and paste the following code in your terminal ```python
+https://github.com/Imaduddin-Mohammed/hangman.git```
 
 ## Milestone 2
  
