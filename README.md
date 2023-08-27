@@ -14,7 +14,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 > Initialized variables for the game
 
 ### Task 1
-- Created a milestone_2.py file in the hangman folder which contains the code for the first milestone, then defined a list of 5 fruits and assigned it to a variable called word list.
+- Created file called milestone_2.py in the hangman folder which contains the code for the first milestone, a variable called **word list** is initialized to a list of fruits as shown below.
 ```python
 word_list = ['pears','apple','banana','orange','kiwi']
 ```
