@@ -22,7 +22,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 word_list = ['pears','apple','banana','orange','kiwi']
 ```
 ### Task 2
-- Using the random module of python, created a random output from the list upon each time it is passed in the PRINT() function and saving to a variable called 'word'.
+- Using the random module of python, created a random output from the list upon each time it is passed in the *print()* function and saving to a variable called 'word'.
 
 ![Image](milestone_2_snippet.png)
 
