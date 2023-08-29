@@ -3,7 +3,6 @@
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-
 ## Milestone 1
 
 >  Setting up the environment
@@ -24,7 +23,7 @@ word_list = ['pears','apple','banana','orange','kiwi']
 ![Image](milestone_2_snippet.png)
 
 ### Task 3 
-- INPUT() function is used to ask the user for an input of string which contains only single letter of alphabet
+- *input()* function is used to ask the user for an input of string which contains only single letter of alphabet
 ```python 
 guess = input('Enter a single letter')
 ```
@@ -46,10 +45,11 @@ else:
 ### Task 1 
 - Created check guess function which takes in an argument and checks if the guessed letter is in the randomly guessed output which is saved in 'word' variable.
 ```python
+def check_guess():
 if guess in milestone_2.word:
-        print("Good guess! {} is in the word.".format(guess))
-    else:
-        print("Sorry, {} is not in the word".format(guess))
+     print("Good guess! {} is in the word.".format(guess))
+else:
+     print("Sorry, {} is not in the word".format(guess))
 ```
 ### Task 2
 - created a function named ask_for_input() which as the name suggests asks the user to enter input and checks if the input is valid. 
@@ -61,9 +61,9 @@ if guess in milestone_2.word:
 - To ensure that the letter is of length 1 and an alphabet, I have utilized the **len()** and **isalpha()** method as shown below:
 ```python
 if len(guess) == 1 and guess.isalpha():
-            break
-        else: 
-            print("Invalid letter, Enter a single character alphabet")
+    break
+else: 
+    print("Invalid letter, Enter a single character alphabet")
 ```
 - Once the if block is True, towards the end of the function **check_guess()** function is called by passing the guess, which will evaluate if the input is in the  word.
 
@@ -73,7 +73,7 @@ if len(guess) == 1 and guess.isalpha():
 - Hangman class and its constructor and attributes are defined
 ### Task 2
 - Copied the entire code from milestone 2 and milestone 3 which will become methods of this class
-# Task 3 
+### Task 3 
 - Check guess method is updated to replace the underscores '_' in word_guessed list with the letter guessed by the user
 - A for-loop that will loop through each letter in the word
 - An if block is created to check if the letter = guess
